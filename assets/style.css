@@ -93,7 +93,7 @@ header{
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
-    padding: 25px 0;
+    padding: 25px 16px;
 }
 
 .logo-name{
@@ -132,17 +132,49 @@ nav button {
     font-size: 17px;
 }
 
+.header {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
 .context {
     font-weight: 700;
     font-size: 60px;
     line-height: 90px;
     color: white;
+    width: 665px;
+    line-break: normal;
 }
 
 .context-sub {
     font: "Inter";
     line-height: 28px;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 400;
     color: white;
+    width: 500px;
+    line-break: normal;
+    margin: 10px 0;
+}
+
+.header button {
+    border: transparent;
+    border-radius: 50px;
+    padding: 15px 30px;
+    background-color: #EB5757;
+    color: white;
+    font-weight: 500;
+    font-size: 17px;
+    width: 191px;
+}
+
+.contextContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.market-table {
+    width: 100%;
 }
