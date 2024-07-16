@@ -289,7 +289,11 @@ tbody span {
 }
 
 .app {
-    margin: 110px auto 105px;
+    padding: 105px  0;
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+    align-items: center;
 }
 
 .appLeft {
@@ -319,8 +323,67 @@ tbody span {
     width: 500px;
 }
 
-.donwload {
+.download {
     display: flex;
     gap: 30px;
 }
 
+.appStore {
+    transition: all .3s;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    background: transparent url("./appStore.png") no-repeat;
+    width: 160px;
+    height: 56px;
+}
+
+.googlePlay {
+    transition: all .3s;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    background: transparent url("./googlePlay.png") no-repeat;
+    width: 170px;
+    height: 56px;
+}
+
+.buttonDirector {
+    display: block;
+    height: inherit;
+}
+
+.news {
+    padding: 100px 0 110px;
+}
+
+.news .title {
+    font-weight: 600;
+    font-size: 32px;
+    color: #000;
+    text-align: center;
+}
+
+.newsTilesContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.newsTiles {
+    width: 368px;
+    height: fit-content;
+    background-color: #FFF;
+}
+
+.newsTiles .title {
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.newsTiles .sub {
+    color: #4F4F4F;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Open sans", sans-serif;
+}
