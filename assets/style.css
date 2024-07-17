@@ -153,6 +153,8 @@ nav button:active {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
+    padding-top: 60px;
+    align-items: center;
 }
 
 .context {
@@ -199,8 +201,8 @@ nav button:active {
 
 .contextContainer {
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
+    gap: 30px;
 }
 
 .marketTable {
@@ -215,7 +217,23 @@ nav button:active {
     display: flex;
 }
 
-.marketTableContainer table, th, td {
+.marketTableContainer table {
+  border: 0.6px solid #BDBDBD;
+  border-collapse: collapse;
+  border-right: 0;
+  border-left: 0;
+  font-weight: 500;
+}
+
+.marketTableContainer th {
+  border: 0.6px solid #BDBDBD;
+  border-collapse: collapse;
+  border-right: 0;
+  border-left: 0;
+  font-weight: 500;
+}
+
+.marketTableContainer td {
   border: 0.6px solid #BDBDBD;
   border-collapse: collapse;
   border-right: 0;
@@ -414,15 +432,15 @@ tbody span {
 .appStore .availability {
     width: 100%;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 500;
     color: var(--primary-bg-color);
     text-align: left;
 }
 
 .appStore .store {
     width: 100%;
-    font-size: 36px;
-    font-weight: 700;
+    font-size: 30px;
+    font-weight: 600;
     color: var(--primary-bg-color);
     text-align: left;
 }
@@ -430,7 +448,7 @@ tbody span {
 .googlePlay .availability {
     width: 100%;
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 500;
     color: var(--primary-bg-color);
     text-align: left;
 }
@@ -448,7 +466,7 @@ tbody span {
     align-content: center;
     flex-wrap: wrap;
     color: #D7C2FF;
-    width: 175px;
+    width: 145px;
 }
 
 .googlePlay .buttonContext {
@@ -468,6 +486,7 @@ tbody span {
     font-size: 32px;
     color: #000;
     text-align: center;
+    padding-bottom: 46px;
 }
 
 .newsTilesContainer {
@@ -652,6 +671,7 @@ label .sub {
     color: #E6E6E6;
     text-align: left;
     padding: 20px 0;
+    width: fit-content;
 }
 
 .footer table {
