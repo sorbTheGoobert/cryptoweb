@@ -8,7 +8,8 @@ html {
 }
 
 body {
-    margin: 0;
+    margin: 0 auto;
+    background-color: #1B004E;
 }
 
 .container {
@@ -86,6 +87,10 @@ img {
 
 header{
     background-color: var(--primary-bg-color);
+}
+
+button {
+    font-family: "Poppins";
 }
 
 .navigation{
@@ -185,7 +190,7 @@ nav button:active {
     color: white;
     font-weight: 500;
     font-size: 17px;
-    width: 191px;
+    width: 195px;
     transition: all .3s;
     cursor: pointer;
 }
@@ -287,6 +292,10 @@ nav button:active {
 .head {
     font-size: 14px;
     font-weight: 500;
+}
+
+.head:last-child {
+    text-align: right;
 }
 
 tbody span {
@@ -406,18 +415,20 @@ tbody span {
     gap: 30px;
 }
 
-.appStore {
+#appStore {
     background-color: #D7C2FF;
     border: 2px #D7C2FF solid;
     border-radius: 10px;
     padding: 5px 10px;
+    transition: all .3s;
 }
 
-.googlePlay {
+#googlePlay {
     background-color: #D7C2FF;
     border: 2px #D7C2FF solid;
     border-radius: 10px;
     padding: 5px 10px;
+    transition: all .3s;
 }
 
 .buttonDirector {
@@ -429,52 +440,54 @@ tbody span {
     width: fit-content; */
 }
 
-.appStore .availability {
+#appStore .availability {
     width: 100%;
     font-size: 16px;
     font-weight: 500;
-    color: var(--primary-bg-color);
+    /* color: var(--primary-bg-color); */
     text-align: left;
 }
 
-.appStore .store {
+#appStore .store {
     width: 100%;
     font-size: 30px;
     font-weight: 600;
-    color: var(--primary-bg-color);
+    /* color: var(--primary-bg-color); */
     text-align: left;
 }
 
-.googlePlay .availability {
+#googlePlay .availability {
     width: 100%;
     font-size: 12px;
     font-weight: 500;
-    color: var(--primary-bg-color);
+    /* color: var(--primary-bg-color); */
     text-align: left;
 }
 
-.googlePlay .store {
+#googlePlay .store {
     width: 100%;
     font-size: 24px;
     font-weight: 600;
-    color: var(--primary-bg-color);
+    /* color: var(--primary-bg-color); */
     text-align: left;
 }
 
-.appStore .buttonContext {
+#appStore .buttonContext {
     display: flex;
     align-content: center;
     flex-wrap: wrap;
     color: #D7C2FF;
     width: 145px;
+    font-family: "Inter";
 }
 
-.googlePlay .buttonContext {
+#googlePlay .buttonContext {
     display: flex;
     align-content: center;
     flex-wrap: wrap;
     color: #D7C2FF;
     width: 140px;
+    font-family: "Inter";
 }
 
 .news {
@@ -508,7 +521,7 @@ tbody span {
     font-size: 16px;
     font-weight: 500;
     text-align: start;
-    margin: 0 0 13px;
+    padding: 0 0 13px;
 }
 
 .newsTiles .sub {
@@ -578,10 +591,6 @@ label .sub {
     margin-bottom: 50px;
 }
 
-.footer {
-    background: linear-gradient(225deg, #220076, #4E0062);
-}
-
 #email {
     width: 578px;
     border-radius: 37px;
@@ -605,7 +614,7 @@ label .sub {
     font-weight: 500;
     background-color: #EB5757;
     border: 2px #EB5757 solid;
-    margin-left: -139px;
+    margin-left: -141px;
     margin-top: 7px;
     transition: all .3s;
 }
@@ -621,68 +630,58 @@ label .sub {
     border: 2px #852f2f solid;
 }
 
-.footer thead th, td, tbody, tr, td {
-    border: 0px;
+.footer {
+    background: linear-gradient(225deg, #220076, #4E0062);
 }
 
-.footerTableContainer {
+.footerLinkContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 81px 0 59px;
+}
+
+.section {
+    width: fit-content;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    height: 228.41px;
 }
 
-.footer thead {
-    color: #FFF;
+.section ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: fit-content;
+    height: 100%;
+}
+
+.section li {
+    width: 100%;
+    color: #E6E6E6;
+    font-weight: 400;
+    font-size: 17px;
+    font-family: "Inter";
+    opacity: 80%;
+}
+
+.section li:first-child {
+    width: 100%;
+    opacity: 100%;
+    color: #E6E6E6;
     font-weight: 600;
     font-size: 18px;
     font-family: "Inter";
-    text-align: left;
 }
 
-.footer th {
-    color: #FFF;
-    font-weight: 600;
-    font-size: 18px;
-    font-family: "Inter";
-    text-align: left;
+.section:last-child{
+    height: 278.41px;
 }
 
-.footer tbody {
-    font-family: "Inter";
-    font-weight: 400;
-    font-size: 17px;
-    color: #E6E6E6;
-    text-align: left;
-    padding: 20px 0;
-}
-
-.footer tr {
-    font-family: "Inter";
-    font-weight: 400;
-    font-size: 17px;
-    color: #E6E6E6;
-    text-align: left;
-    padding: 20px 0;
-}
-
-.footer td {
-    font-family: "Inter";
-    font-weight: 400;
-    font-size: 17px;
-    color: #E6E6E6;
-    text-align: left;
-    padding: 20px 0;
-    width: fit-content;
-}
-
-.footer table {
+.footer .line {
+    border: 1px #BCBCBC solid;
     width: 100%;
-    margin: 80px 0 100px;
-}
-
-.footer .line{
-    width: 100%;
-    border-top: 1px solid #BCBCBC;
-    padding-bottom: 37px;
+    margin-bottom: 36.95px;
 }
 
 .lastPart {
